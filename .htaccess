@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteRule ^masuk$ all-login.php [L]
+RewriteRule ^keluar$ all-logout.php [L]
+RewriteRule ^beranda$ user-beranda.php [L]
+RewriteRule ^dashboard-admin$ dashboard-admin.php [L]
+RewriteRule ^news-list$ news-list.php [L]
+RewriteRule ^daftar-family$ daftar-family.php [L]
+RewriteRule ^edit-family$ edit-family.php [L]
+RewriteRule ^edit-user$ edit-user.php [L]
+RewriteRule ^edit-berita$ edit-berita.php [L]
+RewriteRule ^daftar-user$ daftar-user.php [L]
+RewriteRule ^daftar-berita$ daftar-berita.php [L]
+RewriteRule ^all-berita$ all-berita.php [L]
+RewriteRule ^lihat-berita$ lihat-berita.php [L]
+RewriteRule ^all-renungan$ all-renungan.php [L]
+RewriteRule ^berita-([0-9]+).html$ detail-berita.php?id=$1
+
+
+Options All -Indexes
+</IfModule>
